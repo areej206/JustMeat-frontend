@@ -1,4 +1,5 @@
 import React from "react";
+import Stars from "./stars";
 import Accordion from "react-bootstrap/Accordion";
 
 const Item = ({ item,index }) => {
@@ -8,7 +9,9 @@ const Item = ({ item,index }) => {
      <Accordion.Body>
         <p>{item.description}</p>
         <p> £{item.price}</p>
+        <Stars position={index} />
       </Accordion.Body>
+
     </>
   );
 };
