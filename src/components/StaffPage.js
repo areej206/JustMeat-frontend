@@ -1,6 +1,10 @@
 import React, { useEffect, useState, useCallback } from "react";
+import Login from "./Login";
+import useToken from "./useToken";
 
 export default function StaffPage() {
+  // const [token, setToken] = useState();
+  const { token, setToken } = useToken();  
   const [orders, setOrders] = useState([
     { name: "", table: "", foodOrder: [""] },
   ]);
@@ -8,9 +12,9 @@ export default function StaffPage() {
   const fetchData = useCallback(() => {
     const settings = {
       method: "GET",
-      // headers: {
-      //   Authorization: token,
-      // },
+      headers: {
+        Authorization: token,
+      },
     };
     const url = "http://localhost:3001/viewOrders";
     fetch(url, settings)
@@ -25,14 +29,17 @@ export default function StaffPage() {
           customerOrder[index] = { name, table, foodOrder };
         });
         setOrders(customerOrder);
-       
       })
       .catch((err) => console.error(err));
-  }, []);
+  }, [token]);
 
   useEffect(() => {
     fetchData();
   }, [fetchData]);
+
+  if (!token) {
+    return <Login setToken={setToken} />;
+  }
 
   return (
     <div className="container-fluid">
