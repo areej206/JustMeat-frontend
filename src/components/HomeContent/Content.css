@@ -1,0 +1,303 @@
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Evenly distribute space between child elements */
+    align-items: center;
+    margin: 10px 0;
+    /* Adjusted margin */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Added transition for smooth animation */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+}
+
+
+.sectionContainer:hover {
+    transform: scale(1.1);
+    /* Increase the size by 10% on hover */
+}
+
+.sectionContainer:active {
+    transform: translateY(3px);
+    /* Move the container down by 3px on click */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    /* Add shadow on click */
+}
+
+
+
+.container-link {
+    margin-top: 0;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+.container-image {
+    flex: 0 0 auto;
+    margin-left: 10px;
+    /* Adjusted margin to move image to the right */
+    width: 250px;
+    /* Increased width of the image */
+}
+
+.container-image img {
+    width: 100%;
+    /* Ensure the image fills its container */
+    max-width: 100%;
+    /* Ensure the image doesn't exceed its container */
+    /* margin-left: 60%; */
+}
+
+.map-cont {
+    margin-top: 14%;
+
+}
+
+.container-image .map-img {
+    /* padding-top: 30%; */
+    margin-left: 30%;
+
+}
+
+
+.meat-cont {
+    margin-top: 13%;
+
+}
+
+.meat-img {
+    /* padding-top: 30%; */
+    margin-left: 40%;
+
+}
+
+
+.review-cont {
+    margin-top: 10%;
+
+}
+
+.review-img {
+    /* padding-top: 30%; */
+    margin-left: 30%;
+
+}
+
+.content {
+    flex: 1;
+    margin: 0 1rem;
+    /* margin-left: 10px; */
+    /* Adjusted margin to align content with image */
+}
+
+.content h1 {
+    margin: 0;
+}
+
+.homecategories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Evenly distribute space between child elements */
+    align-items: center;
+    width: 100%;
+    padding: 0 4rem;
+    margin: 2rem 0;
+}
+
+.homecategories .sectionContainer {
+    /* width: calc(24% - 20px);  */
+    width: 350px;
+    min-width: 300px;
+    height: 240px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Evenly distribute space between child elements */
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+/* Rest of your CSS remains unchanged */
+
+
+.homecategories .sectionContainer:nth-child(1) {
+    background-color: #E55151;
+    /* ff939378
+    a8d0e6 */
+}
+
+.homecategories .sectionContainer:nth-child(2) {
+    background-color: #143996;
+    /* background-color: #a8d0e6; */
+
+    /* ff939378 */
+}
+
+.homecategories .sectionContainer:nth-child(3) {
+    background-color: #E55151;
+    /* background-color: #ff9393; */
+
+
+}
+
+.homecategories .sectionContainer:nth-child(4) {
+    background-color: #143996;
+}
+
+.homecategories .sectionContainer img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.homecategories .content,
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.homecategories .sectionContainer .content h1 {
+    font-size: 20px;
+    padding: 0 20px;
+    /* margin: 10px; */
+    /* background-color: aqua; */
+}
+
+.homecategories .sectionContainer .content,
+.RegisterBanner .content,
+.AimBanner .content {
+    /* width: 70%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    /* font-weight: 300; */
+    text-align: center;
+    margin: 0 20px;
+}
+
+.AimBanner{
+    display: flex;
+}
+
+
+
+.AimBanner .content {
+}
+.AimBanner .content-image img {
+    width: 400px;
+    height: 380px;
+    border-radius: 4%;
+    /* border-radius: 5%; */
+}
+
+
+.AimBanner .content-image{
+width: 30%;
+/* background-color: #E55151; */
+}
+
+
+.AimBanner .content {
+    color: rgba(0, 0, 0, 0.832);
+    width: 70%;
+
+    /* font-size: 30px; */
+
+}
+
+.AimBanner {
+    min-width: 300px;
+    height: 440px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    margin: 20px 0;
+    background-color: #ffffff;
+
+}
+
+
+.AimBanner h1 {
+    margin-bottom: 40px;
+}
+
+.RegisterBanner h1 {
+    font-size: 32px;
+}
+
+.RegisterBanner {
+    min-width: 300px;
+    height: 440px;
+    overflow: hidden;
+    background-color: #143996;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px; */
+    padding-right: 40px;
+    /* margin-bottom: 10px; */
+}
+
+.containerRegister {
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    /* Center horizontally */
+    margin: 3rem 30rem 0 30rem;
+    /* background-color: #b93c3c; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Added transition for smooth animation */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+}
+
+.register-container-image {
+    flex: 1;
+    /* Allow the image container to grow flexibly */
+    display: flex;
+    justify-content: center;
+}
+
+.RegisterBanner img {
+    max-width: 100%;
+    /* Ensure image doesn't exceed container width */
+    height: auto;
+    /* Maintain aspect ratio */
+    /* margin-top: 6%;  */
+    max-height: 100%;
+    /* Ensure image doesn't exceed container height */
+}
+
+
+.RegisterBanner .content button {
+    /* margin: 50px; */
+    margin: 2rem 0;
+    padding: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    /* Added transition for smooth animation */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+}
+
+.RegisterBanner .content button:hover {
+    transform: scale(1.1);
+    /* Increase size by 10% on hover */
+}
+
+.RegisterBanner .content button:active {
+    transform: translateY(3px);
+    /* Move button downwards by 3px on click */
+    background-color: #143996;
+    /* Change background color on click */
+    outline: 1px solid blue;
+}

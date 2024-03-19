@@ -1,33 +1,67 @@
 import React from "react";
 import useFetchData from "./useFetchData";
-import Search from "./Search";
-import Map from "./Map";
+import BannerSlider from '../components/Banners/BannerSlider'
+import Content from "./HomeContent/Content";
+import Footer from "./Footer/Footer";
 
 const Home = () => {
-  const {status, foods} = useFetchData();
-  if (status==='fetched')
-  return (
-    <div className="container-fluid">
-      <div className="row">
-      <div className="col"><h3>Who we are...</h3>
-      <p>We are a small local chain of cafes specialising in simple, wholesome, locally sourced dishes.</p>
-      <p>A homegrown business, we proved so popular we outgrew our original location and expanded to meet demand. Increased size means we can offer even better value across the Central belt.</p>
-        <p>We take pride in providing straightforward, good value food.</p>
-        <p>This branch was the first to open in 2016. Since then we have expanded to three other locations - all providing freshly cooked, locally sourced food. We aim to be as sustainable as possible. </p> 
-        <p> We are especially proud of our absolutely delicious traditional Italian dishes! Super fresh and indulgent. </p>
-        <p> Not to mention our fabulous friendly staff - we look forward to welcoming you soon.</p>
-       </div>
-      <div className="col"><h3>Where we are ...</h3> 
-       <Map />
-      </div>
-        <div className="col">
-        <h3>Explore our menu ...</h3>
-          <Search foods={foods} />
+  const { status, butchers } = useFetchData();
+  if (status === 'fetched')
+    return (
+      <div>
+
+        <BannerSlider />
+        <div className="content-container">
+
+          <Content />
         </div>
 
+        <div className='RegisterBanner'>
+          <div className='containerRegister'>
+            <div className='content'>
+
+              <h1>
+                Stay home & get your daily meat from a butcher of your choice
+              </h1>
+              <button type="button" class="btn btn-primary">Register Now</button>
+            </div>
+
+            <div className='register-container-image'>
+              <img src="images/signin1.png" className="signin-img" alt='img3' />
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div className='AimBanner'>
+          <div className='content'>
+            <h1>
+              Our Aim
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div className='content-image'>
+            <img src="banner/test.png" className="signin-img" alt='img3' />
+
+          </div>
+
+
+        </div>
+
+
+        <Footer />
+
       </div>
-    </div>
-  );
+
+    );
 };
 
 export default Home;

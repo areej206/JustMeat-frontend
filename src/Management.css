@@ -1,0 +1,65 @@
+/* Additional styles for the updated layout */
+.general-info-container {
+    margin-bottom: 2rem;
+  }
+  
+  .field-name {
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 0.5rem;
+  }
+  
+  .field-value {
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  
+  .opening-hours-container {
+    margin-bottom: 1rem;
+  }
+  
+  .opening-hours-title {
+    font-weight: bold;
+  }
+  
+  .days-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .day-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .day-checkbox {
+    margin-right: 0.5rem;
+  }
+  
+  .day-label {
+    font-size: 0.9rem;
+  }
+  
+  .inventory-container {
+    margin-bottom: 2rem;
+  }
+  
+  .inventory-title {
+    /* font-weight: bold; */
+  }
+  
+  .inventory-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .inventory-container ul li {
+    margin-bottom: 1rem;
+  }
+  
+  .inventory-category{
+    /* padding: 10px; */
+    /* background-color: antiquewhite; */
+  }

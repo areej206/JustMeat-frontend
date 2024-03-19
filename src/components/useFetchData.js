@@ -1,31 +1,32 @@
-import  { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 const useFetchData = () => {
-    const [status, setStatus] = useState('idle');
-    const [foods, setFoods]=useState([{
-        id:"",
-        name:"",
-        price:"",
-        category:"",
-        available:"",
-      }]);
+  const [status, setStatus] = useState('idle');
+  const [butchers, setButchers] = useState([]);
+  const [users, setUsers] = useState([]);
 
-  const fetchData = useCallback(() => {
-    const url = "http://localhost:3001/food";
+  const fetchData = useCallback((url, setData) => {
     fetch(url)
       .then((response) => response.json())
       .then((incomingData) => {
-        console.log(incomingData)
-        setFoods(incomingData);
+        setData(incomingData);
         setStatus('fetched');
       })
-      .catch((err) => console.error(err));
+      .catch((err) => {
+        console.error(err);
+        setStatus('error');
+      });
   }, []);
 
   useEffect(() => {
-    fetchData();
-  }, [fetchData]);
+    const butcherUrl = "http://localhost:3005/butchers";
+    const userUrl = "http://localhost:3005/users";
 
-  return { status, foods };
+    fetchData(butcherUrl, setButchers);
+    fetchData(userUrl, setUsers);
+  }, [fetchData]); // Added fetchData to the dependency array
+
+  return { status, butchers, users };
 };
+
 export default useFetchData;

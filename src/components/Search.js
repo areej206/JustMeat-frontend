@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-// import FoodMenu from "./FoodMenu"
-import StyledFoodMenu from "./StyledFoodMenu"
+import StyledButcherList from "./StyledButcherList"
 
-function Search({ foods }) {
+function Search({ butchers }) {
    const [searchField, setSearchField] = useState("");
 
-  const filtered = foods.filter((entry) => {
-    return entry.name.toLowerCase().includes(searchField.toLowerCase())|| entry.description.toLowerCase().includes(searchField.toLowerCase());
+  const filtered = butchers.filter((entry) => {
+    return entry.title.toLowerCase().includes(searchField.toLowerCase())|| entry.address.toLowerCase().includes(searchField.toLowerCase());
   });
 
   return (
@@ -19,7 +18,9 @@ function Search({ foods }) {
               onChange={(e) =>  setSearchField(e.target.value)}
             />
           </div>
-          <StyledFoodMenu foods={filtered} />
+          <StyledButcherList butchers={filtered} />
+
+
       </div>
   
   );

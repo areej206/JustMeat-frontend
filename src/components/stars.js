@@ -1,27 +1,42 @@
+import React from "react";
 import Star from "./star";
-import { useLocalStorage } from "./useLocalStorage";
 
-export default function StarRating({ position, totalStars = 5 }) {
+const Stars = ({ selectedStars, onSelect }) => {
+  const renderStars = () => {
+    const stars = [];
+    const roundedStars = parseFloat(selectedStars);
 
-  const createArray = length => [...Array(length)];
-  let positionInMenu = JSON.stringify(position);
-  const [selectedStars, setSelectedStars] =  useLocalStorage( positionInMenu, 3);
+    // Full stars
+    for (let i = 0; i < Math.floor(roundedStars); i++) {
+      stars.push(
+        <Star key={i} selected={true} halfFilled={false} onClick={() => onSelect(i + 1)} />
+      );
+    }
 
-  
+    // Half star (if applicable)
+    if (roundedStars % 1 !== 0) {
+      stars.push(
+        <Star key="half" selected={true} halfFilled={true} onClick={() => onSelect(Math.ceil(roundedStars))} />
+      );
+    }
+
+    // Remaining empty stars
+    const remainingStars = 5 - Math.ceil(roundedStars);
+    for (let i = 0; i < remainingStars; i++) {
+      stars.push(
+        <Star key={i + Math.ceil(roundedStars)} selected={false} halfFilled={false} onClick={() => onSelect(i + Math.ceil(roundedStars) + 1)} />
+      );
+    }
+
+    return stars;
+  };
 
   return (
-    <div>
-      {createArray(totalStars).map((n, i) => (
-        <Star
-          key={i}
-          selected={selectedStars > i}
-          onSelect={() => setSelectedStars(i + 1)}
-        />
-      ))}
-      <p>
-        {selectedStars} of {totalStars} are selected.
-      </p>
+    <div className="stars-container">
+      {renderStars()}
+      <span>({selectedStars})</span>
     </div>
   );
-}
+};
 
+export default Stars;

@@ -1,11 +1,20 @@
 import React from "react";
+import Footer from "./Footer/Footer";
 
 const Placeholder = () => {
-  return (
-    <>
-     <p>Page will be developed soon</p> 
-    </>
-  );
+    return (
+        <>
+
+            <div className="container-fluid">
+                <div className="border-container">
+                    <h2>Enter Heading</h2>
+
+                </div>
+            </div>
+
+            <Footer />
+        </>
+    );
 };
 
 export default Placeholder;

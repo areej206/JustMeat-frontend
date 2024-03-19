@@ -1,0 +1,224 @@
+/* .container-fluid2 {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  
+  } */
+
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 5px; */
+    background-color: #fff;
+    /* box-shadow: 0px 5px 10px rgba(36, 139, 207, 0.1); */
+}
+
+.butcher-container {
+    font-size: 14px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(36, 139, 207, 0.1);
+    transition: transform 0.3s; /* Add transition for smooth scaling */
+}
+
+.butcher-container:hover {
+    transform: scale(1.05); /* Increase size on hover */
+}
+
+
+ul {
+    padding-left: 0;
+}
+
+.title-container {
+    display: flex;
+    cursor: pointer;
+}
+
+.profile-icon {
+    margin-right: 20px;
+}
+
+.title-details {
+    margin-left: 20px;
+}
+
+.extended-details {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.inventory-group {
+    margin-top: 20px;
+}
+
+.group-content {
+    margin-top: 10px;
+}
+
+.inventory-item {
+    margin-bottom: 5px;
+}
+
+.inventory-item p {
+    margin: 0;
+}
+
+.inventory-item strong {
+    font-weight: bold;
+}
+
+.inventory-item-view-more {
+    cursor: pointer;
+    color: blue;
+    margin-top: 10px;
+}
+
+.inventory-item-view-more:hover {
+    text-decoration: underline;
+}
+
+.ButcherMenuImg {
+    width: 150px;
+    height: 150px;
+}
+
+.group-content {
+    /* background-color: aqua; */
+    display: flex;
+    /* height: 30px; */
+}
+
+.inventory-item {
+    /* background-color: rgb(172, 255, 127); */
+    border: 1px solid rgb(238, 238, 238);
+    box-shadow: 0px 5px 10px rgba(36, 139, 207, 0.1);
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+}
+
+.inventory-item:hover {
+    transform: scale(1.1); 
+}
+
+.item-image {
+    margin-bottom: 5px;
+
+}
+
+.item-image img {
+    width: 120px;
+    height: 120px;
+    /* background-color: azure; */
+}
+
+.item-details {
+    text-align: center;
+    /* Center text */
+}
+
+.ViewMoreArrow {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    margin-top: 10px;
+    /* Adjust margin as needed */
+}
+
+.ViewMoreArrow img {
+    width: 20px;
+    /* Adjust size as needed */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.butcher-details{
+    background-color: #e4f089;
+
+}
+.category-buttons {
+    margin: 1rem 0 0 11.5rem;
+    /* background-color: #89ccf0; */
+
+}
+
+.butcher-details Link{
+    text-decoration: none;
+}
+
+.category-buttons button {
+    margin: 5px;
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 11px;
+    /* border: 1px solid rgb(238, 238, 238); */
+    box-shadow: 0px 10px 10px rgba(36, 139, 207, 0.1);
+    background-color: #a8d0e6;
+    border: 1px solid #89ccf0;
+
+
+    /* background-color: #ff93939c;
+    border: 1px solid #fe6e6e9e; */
+
+}
+
+.category-buttons button:hover {
+    background-color: #e6a8a8;
+    border: 1px solid #f08080;
+
+
+}
+
+
+
+/* 
+.category-buttons button:nth-child(1) {
+    background-color: #ff93c5;
+    border: 1px solid #f36dac;
+    color: rgb(0, 0, 0)
+}
+
+
+.category-buttons button:nth-child(2) {
+    background-color: #ffd093;
+    border: 1px solid #f9bc6c;
+    color: rgb(0, 0, 0);
+}
+
+
+.category-buttons button:nth-child(3) {
+    background-color: #ff9393;
+    border: 1px solid #fe6e6e;
+    color: rgb(0, 0, 0);
+}
+
+
+.category-buttons button:nth-child(4) {
+    background-color: #a8d0e6;
+    border: 1px solid #89ccf0;
+    color: rgb(0, 0, 0);
+}
+
+.category-buttons button:nth-child(5) {
+    background-color: #bae6a8;
+    border: 1px solid #a3e688;
+    color: rgb(0, 0, 0);
+} */

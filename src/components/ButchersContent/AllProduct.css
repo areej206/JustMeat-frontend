@@ -1,0 +1,47 @@
+
+.allproducts{
+    display: flex;
+    flex-direction: column;
+    width: 78%;
+    /* background-color: turquoise; */
+
+}
+.allproducts .search-bar{
+    margin: 0 2rem;
+}
+.allproducts h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+.allproducts .products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+@media (max-width: 950px)
+{
+    .allproducts{
+        width: 60%;
+    }
+    
+}
+
+.product-link {
+    text-decoration: none !important; /* Remove underline */
+    color: rgb(0, 0, 0); /* Use the desired text color */
+  }
+  
+  
+
+@media (max-width: 650px)
+{
+    .allproducts{
+        width: 100%;
+    }
+    
+    
+}

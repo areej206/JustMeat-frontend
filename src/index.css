@@ -12,31 +12,735 @@ code {
     monospace;
 }
 
-list {
-  list-style-type: none;
+
+
+
+
+
+/*         Map style            */
+/*         Map style            */
+/*         Map style            */
+
+.map {
+  height: 70vh;
+}
+
+.leaflet-popup-content h3 a,
+  .leaflet-popup-content .address-info p a {
+
+
+  color: #000000;
+  text-decoration: none;
+}
+
+.leaflet-popup-content p{
+  text-decoration: none;
+
+}
+
+.crosshairs-box {
+  position: absolute;
+  top: 350px;
+  left: 3%;
+  z-index: 1000;
+}
+
+.crosshairs {
+  color: #232323;
+  width: 15px;
+  height: 20px;
+  background-color: white;
+  box-shadow: 0 0 0 2px rgba(99, 99, 99, 0.384);
+  padding: 5px 7.5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.crosshairs:hover {
+  background-color: rgb(236, 235, 235);
 }
 
 
-.leaflet-container {
-  width: 100%;
-  height: 80vh;
-  border-radius: 12px;
+.popup-phone {
+  /* color: white; */
+  margin-right: 10px;
+  /* Adjust the spacing between icon and text */
+  font-size: 14px;
+  /* Increase the font size of the icon */
+  text-decoration: none;
+  color: #0078A8;
+}
+
+.opening-hours-dropdown {
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.opening-hours-dropdown select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 1rem;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.opening-hours-dropdown select:hover {
+  border-color: #999;
+}
+
+.hours {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+
+.custom-popup {
+  width: 380px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.rating-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: -10px;
+
+}
+
+
+
+.category-info {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.icons-container {
+  border: 1px solid rgb(187, 187, 187);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin-top: -10px;
+}
+
+.icons-container svg {
+  font-size: 20px;
+  /* Adjust the size to your preference */
+  border: 1px solid rgb(140, 140, 140);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+
+.address-info p {
+  padding: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  font-size: xx-small;
 }
 
 .popup {
   background-color: #9382fe;
-  color:rgb(247, 247, 251);
+  color: rgb(247, 247, 251);
   border-radius: 12px;
   padding: 20px;
   width: 200px;
   height: 100px;
   text-align: center;
 }
-.info { 
-   background-color: #9382fe;
-  color:rgb(247, 247, 251);
+
+.info {
+  background-color: #9382fe;
+  color: rgb(247, 247, 251);
   border-radius: 12px;
   padding: 20px;
   width: 100%;
   height: 100px;
+}
+
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgba(36, 139, 207, 0.1);
+}
+
+
+/*       CSS for Shopping Basket          */
+/*       CSS for Shopping Basket          */
+/*       CSS for Shopping Basket          */
+
+
+
+/* CSS for Navigation Component */
+
+.navbar {
+  position: relative;
+  height: auto;
+}
+
+.navbar .container {
+  position: relative;
+  height: auto;
+}
+
+.navbar .container .nav-link {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar .container .nav-link:hover {
+  transform: none;
+}
+
+.navbar .container .carousel-inner {
+  position: relative;
+  height: 500px;
+}
+
+.navbar .container .carousel-item.active .container .background {
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.checkout-container {
+  margin-top: 20px;
+}
+
+
+.CheckoutHeading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.basket-item-container {
+  display: flex;
+}
+
+.single-item-container {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgba(36, 139, 207, 0.1);
+}
+
+
+
+.cart-subheadings {
+  margin: 10px;
+  border: 0.1px solid #ccc;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-subheadings p {
+  margin: 1rem 7rem;
+
+}
+
+
+.basket-right-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.basket-right-section p {
+  /* space between categories in each item */
+  /* make this responsive  */
+  margin: 1rem 5rem;
+}
+
+
+
+.basket-item-image-container {
+  width: 100%;
+}
+
+.butcher-info {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+
+
+.checkout-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 30px;
+  margin: 10px;
+  padding: 20px 40px;
+}
+
+
+.checkout-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  /* background-color: #007bff; */
+  color: #fff;
+  cursor: pointer;
+}
+
+.order-details {
+  margin-top: 30px;
+}
+
+.order-details h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.order-details .inner-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+
+
+
+/* Profile Page */
+
+
+/* Add this CSS to your stylesheet */
+
+
+/* Profile.css */
+
+.profile-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* Two columns */
+  grid-column-gap: 20px;
+  /* Add some space between columns */
+}
+
+.user-info-section {
+  grid-column: 1;
+  /* Place in the first column */
+}
+
+
+.profile-options {
+  grid-column: 2;
+  /* Place in the second column */
+}
+
+.user-info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.user-pfp {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.edit-pfp {
+  position: absolute;
+  top: 190px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 15px 80px;
+  border-radius: 0 0 1500px 1500px;
+  z-index: 1;
+  /* margin-top: 10px; */
+}
+
+.profile-options {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.border-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  /* margin: 0 20px; */
+  border: 1px solid #cccccc57;
+  /* border-radius: 5px; */
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgba(36, 139, 207, 0.1);
+}
+
+
+.add-review-button button {
+  margin-left: 20px;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 10px; */
+
+}
+
+.emptyBasket {
+  text-align: center;
+
+}
+
+.emptyBasketText {
+  /* background-color: #ffc107; */
+  padding: 2rem;
+  font-size: 20px;
+}
+
+.emptyBasketLink {}
+
+/* ReviewForm.css */
+.review-form {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.review-form__label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.review-form__input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.review-form__input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.review-form__textarea {
+  height: 120px;
+  resize: none;
+}
+
+.review-form__button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.review-form__button:hover {
+  background-color: #0056b3;
+}
+
+
+
+/*     Reviews Form     */
+/*     Reviews Form     */
+/*     Reviews Form     */
+/* ReviewForm.css */
+
+/* Form container */
+.review-form {
+  width: 100%;
+  max-width: 450px;
+  margin: 20px auto ;
+  padding: 20px;
+  background-color: rgb(224, 238, 252);
+  border-radius: 10px;
+}
+
+/* Form input and textarea */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Form input and textarea focus styles */
+.form-control:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Submit button */
+.review-submit-button {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.review-submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Star rating form group */
+.star-form-group {
+  margin-bottom: 20px;
+}
+
+/* ButcherReviewForm.css */
+
+/* Form container */
+.butcher-review-form {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgb(224, 238, 252);
+  border-radius: 10px;
+}
+
+/* Form input and textarea */
+.butcher-review-form input,
+.butcher-review-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Form input and textarea focus styles */
+.butcher-review-form input:focus,
+.butcher-review-form textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Form input placeholder */
+.butcher-review-form input::placeholder,
+.butcher-review-form textarea::placeholder {
+  color: #6c757d;
+}
+
+/* Form input and textarea hover styles */
+.butcher-review-form input:hover,
+.butcher-review-form textarea:hover {
+  border-color: #6c757d;
+}
+
+/* Submit button */
+.butcher-review-button {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.butcher-review-button:hover {
+  background-color: #0056b3;
+}
+
+/* Star rating form group */
+.star-form-group {
+  margin-bottom: 20px;
+}
+
+/* Butcher form group */
+.butcher-form-group {
+  margin-bottom: 20px;
+}
+
+.butcher-form-group label,
+.form-group label,
+.topic-form-group label,
+.star-form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/* Update styles for input and textarea focus */
+.butcher-form-group input:focus,
+.butcher-form-group textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Update styles for input placeholder */
+.butcher-form-group input::placeholder,
+.butcher-form-group textarea::placeholder {
+  color: #6c757d;
+}
+
+/* Update styles for input and textarea hover */
+.butcher-form-group input:hover,
+.butcher-form-group textarea:hover {
+  border-color: #6c757d;
+}
+
+/* Review container */
+.review-conta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-conta>p:first-of-type {
+  color: #807e7e;
+}
+
+.butcherReviewCont {
+  margin: 20px 0;
+}
+
+.butcherReviewCont>p:first-of-type {
+  font-weight: 500;
+  font-size: 18px;
+  padding: 0;
+}
+
+.butcherReviewCont>p:nth-of-type(2) {
+  font-weight: 500;
+  margin-top: -10px;
+}
+
+.idekkkk {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inner-container-reviewsss {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0px 5px 0px rgba(36, 139, 207, 0.1);
+}
+
+.react-autosuggest__suggestions-container {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.react-autosuggest__suggestions-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.react-autosuggest__suggestions-container li {
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(66, 126, 205, 0.541);
+  border-radius: 5px;
+  border: 1px solid #cccccc63;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.react-autosuggest__suggestions-container li:hover {
+  background-color: #f0f0f0;
+}
+
+/* ButcherAutocomplete.css */
+
+.butcher-autocomplete-container {
+  position: relative;
+}
+
+.butcher-autocomplete-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.butcher-autocomplete-suggestion {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.butcher-autocomplete-suggestion:focus:hover {
+  background-color: #b3d7ff;
+}
+
+.butcher-not-found {
+  margin-top: -20px;
+  color: red;
+  width: 100%;
+  padding: 10px;
+  border: 0.1px solid #9191915d;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 0px rgba(36, 139, 207, 0.1);
+  font-size: 16px;
 }

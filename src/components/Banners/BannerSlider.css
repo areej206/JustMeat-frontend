@@ -1,0 +1,199 @@
+.s-image {
+    padding: 15px;
+    width: 450px;
+    margin-right: 5px;
+}
+
+.discription {
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.d-info {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.background,
+.carousel-inner {
+    background-color: #efefef;
+}
+
+
+#carouselExampleIndicators .text-success {
+    color: #143996 !important;
+}
+
+#carouselExampleIndicators .title {
+    color: #ffffff !important;
+}
+
+#carouselExampleIndicators .carousel-control-prev-icon,
+#carouselExampleIndicators .carousel-control-next-icon {
+    background-color: transparent !important; 
+    
+}
+
+#carouselExampleIndicators .carousel-control-prev:hover .carousel-control-prev-icon,
+#carouselExampleIndicators .carousel-control-next:hover .carousel-control-next-icon {
+    color: white !important;
+    background-color: transparent !important; 
+
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    /* margin-left: -100px; */
+    z-index: 1;
+}
+
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+    /* border-radius: 50%; */
+}
+
+.banner-carousel-item:hover .container {
+    transform: none;
+    box-shadow: none;
+}
+
+.carousel-inner {
+    position: relative;
+    height: 500px;
+}
+
+.carousel-item.active .container .background {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.carousel-control-next, .carousel-control-prev{
+    width: 5% !important;
+}
+
+.hero,
+.bannerInventory,
+.bannerMap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background-color: pink;
+    background-size: cover;
+    background-position: center;
+    transform: scaleX(-1);
+}
+
+.hero {
+    background-image: url(../../../public/banner/butcher2.png);
+
+}
+
+
+.bannerMap {
+    background-image: url(../../../public/banner/pin.png);
+}
+
+
+.bannerInventory {
+    background-image: url(../../../public/banner/inventory.png);
+}
+
+.hero > h2, .bannerMap > h2, .bannerInventory > h2 {
+    color: #FFF;
+    font-weight: bold;
+    transform: scaleX(-1);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 500px;
+    /* padding: 2em; */
+}
+
+.hero > h2 {
+    background-image: linear-gradient(to right,
+    rgba(0, 0, 0, 1) 40%,
+    rgba(0, 0, 0, .6) 50%,
+    rgba(0, 0, 0, .1) 80%,
+    rgba(0, 0, 0, 0) 100%);
+}
+
+.bannerMap > h2 {
+    background-image: linear-gradient(to right,
+        rgb(185, 173, 149, 1) 40%, 
+        rgba(185, 173, 149, .7) 50%,  
+        rgba(185, 173, 149, .1) 80%,   
+        rgba(185, 173, 149, 0) 100%    
+    );
+}
+
+.bannerInventory > h2 {
+    background-image: linear-gradient(to right,
+    rgb(20, 57, 150, 1) 40%,
+    rgba(20, 57, 150, .6) 50%,
+    rgba(20, 57, 150, .1) 80%,
+    rgba(20, 57, 150, 0) 100%);
+}
+
+.hero>.hero-content,
+.bannerMap>.bannerMap-content,
+.bannerInventory>.bannerInventory-content {
+    position: absolute;
+    left: 0;
+    /* top: 100px; */
+    width: 100%;
+    transform: inherit;
+    margin: 6% 0;
+    padding: 0 2rem;
+}
+
+.hero>.hero-content span,
+.bannerMap>.bannerMap-content span,
+.bannerInventory>.bannerInventory-content span {
+    width: 50%;
+    display: block;
+    /* background-color: aqua; */
+    margin: 20px 30px;
+    text-align: center;
+}
+
+.hero>.hero-content .title,
+.bannerMap>.bannerMap-content .title,
+.bannerInventory>.bannerInventory-content .title {
+    font-size: 50px;
+    color: #FFF;
+}
+
+.hero>.hero-content .description,
+.bannerMap>.bannerMap-content .description,
+.bannerInventory>.bannerInventory-content .description {
+    font-size: 16px;
+    color: #FFF;
+}
+
+.hero>.hero-content .d-info,
+.bannerMap>.bannerMap-content .d-info,
+.bannerInventory>.bannerInventory-content .d-info {
+    font-size: 18px;
+    color: #FFF;
+}
+
+.d-info {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.background,
+.carousel-inner {
+    background-color: #efefef;
+}

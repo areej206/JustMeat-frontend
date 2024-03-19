@@ -1,0 +1,216 @@
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    width: 330px;
+    height: 375px;
+    margin: 10px;
+    position: relative;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    
+    
+}
+
+/* fix this later  */
+/* fix this later  */
+/* fix this later  */
+/* fix this later  */
+.product .s2,.product .s3{
+    /* text-decoration: none; */
+    /* color: #fc7979; */
+    text-decoration: 2px rgb(255, 255, 255) underline;
+}
+.product:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .ProductCardButton{
+    /* outline: none; */
+  }
+
+.ProductCardButton:hover {
+    /* transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    background-color: #ff9393; */
+    /* outline: 1px solid #ff9393; */
+  }
+
+/* .product .s1 img:hover {
+    transform: scale(1.1); 
+} */
+.quantity {
+    /* font-size: 40px; */
+    position: absolute;
+    top: 0;
+    right: 0; 
+    /* background-color: #ff93939c; */
+    background-color: #ff9393;
+    border: 2px solid #fc7979 ;
+    padding: 20px 15px ;
+    padding: 10px 20px;
+    border-radius: 0 4px 0 50% ;
+    
+}
+.product .s1 {
+    height: 65%;
+    /* width: 100%; */
+    overflow: hidden;
+}
+.product .s1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.5s ease;
+}
+.product .s1 img:hover {
+    scale: 1.1;
+}
+.product .s2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center; 
+}
+
+.product .s2  .price{
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.product h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    width: 90%;
+}
+.product h3 span {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    margin-left: 5px;
+}
+.product .s2 p {
+    font-size: 20px;
+    /* font-weight: 700; */
+    margin: 0;
+    /* width: 90%; */
+}
+.product .s3 {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+}
+.product .s3 p {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0;
+    padding: 5px 0;
+    border-radius: 5px;
+    color: #5b5b5b;
+    width: 90%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.product .s3 span {
+    padding:  0 20px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.product .s3 .quantityButton {
+    padding:  0 5px;
+    margin:  0 5px;
+    border: 1px solid black;
+  
+}
+
+
+@keyframes buttonMotion {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .product .s3 button {
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product .s3 button:hover {
+    transform: scale(1.05);
+  }
+  
+  .product .s3 button:active {
+    animation: buttonMotion 0.5s ease;
+  }
+
+.product .addbtn {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.product .addbtn svg {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    padding: 5px;
+    color: var(--col2);
+    transition: all 0.5s ease;
+}
+.product .addbtn svg:hover {
+    background-color: var(--col1);
+    color: white;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.product .addbtn .qty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.product .addbtn .qty button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: var(--col1);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+.product .addbtn .qty p {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--col1);
+    margin: 0;
+    padding: 0;
+}
+.product .addtocart {
+    border: none;
+    background-color: var(--col1);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    /* background-color: rgb(120, 192, 192); */
+}
